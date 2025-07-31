@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugin/nice-select/nice-select.css">
+    <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/plugin/nouislider/nouislider.min.js">
+    <link rel="stylesheet" href="./assets/plugin/slick/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Your Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+         <a href="cart.html" class="position-relative">
+    <i class="bi bi-cart"></i>
+    <span id="cart-item-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+        0
+    </span>
+</a>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container my-5">
+    <h2>Your Shopping Cart</h2>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div id="cart-items-container" class="card p-3">
+                <p>Your cart is empty.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="card p-3">
+                <h4>Cart Summary</h4>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Subtotal:</span>
+                    <span>₹<span id="cart-total-sub">0.00</span></span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between fw-bold fs-5">
+                    <span>Total:</span>
+                    <span>₹<span id="cart-total">0.00</span></span>
+                </div>
+                <a href="checkout.html" class="btn btn-success btn-lg mt-4">Proceed to Checkout</a>
+                <a href="index.html" class="btn btn-outline-secondary mt-2">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h4 class="footer_title">About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h4 class="footer_title">Quick Links</h4>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <h4 class="footer_title">Categories</h4>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer_title">Contact Info</h4>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> 123 Street, City, Country</li>
+                        <li><i class="bi bi-phone"></i> +123 456 7890</li>
+                        <li><i class="bi bi-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mt-4 text-white px-3 copyright">
+            <span>Copyright © 2024. All Rights Reserved. </span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugin/nice-select/jquery.nice-select.min.js"></script>
+    <script src="./assets/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./assets/plugin/nouislider/nouislider.min.js"></script>
+    <script src="./assets/plugin/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cart-management.js"></script>
+</body>
+</html>
